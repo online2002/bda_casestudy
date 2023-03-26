@@ -1,11 +1,7 @@
 from PIL import Image
 import pandas as pd
 import streamlit as st
-import numpy as np
-import plotly.express as px
-import matplotlib.pyplot as plt
-import math
-import seaborn as sns
+from plotly import express as px
 
 df = pd.read_csv("dataset.csv")
 df["Order Date"] = pd.to_datetime(df["Order Date"])
